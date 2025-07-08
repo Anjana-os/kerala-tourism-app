@@ -1,0 +1,180 @@
+/* ========== Basic Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== Global Styles ========== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #2e8b57;
+  background: url('https://c.ndtvimg.com/gws/ms/7-places-to-visit-in-kerala/assets/4.jpeg?1739271588') no-repeat center center / cover;
+  min-height: 100vh;   /* Ensure it covers full screen */
+  background-attachment: fixed; /* Optional: Makes the image stay in place on scroll */
+}
+
+
+
+/* ========== Header ========== */
+header {
+  background: #2e8b57;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* ========== Navbar (if used elsewhere) ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 100, 0, 0.85);
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c8b614;
+}
+
+.nav-buttons .btn {
+  text-decoration: none;
+  background-color: white;
+  color: #084f27;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-buttons .btn:hover {
+  background-color: #408a40;
+}
+
+/* ========== Welcome Section ========== */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Give it enough space */
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+
+.welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-section p {
+  font-size: 1.5rem;
+}
+
+/* ========== District Grid ========== */
+.district-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.district-btn {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: white;
+  color: #2e8b57;
+  border: 2px solid #2e8b57;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.district-btn:hover {
+  background-color: #2e8b57;
+  color: white;
+}
+
+/* ========== Responsive District Grid ========== */
+@media (max-width: 900px) {
+  .district-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .district-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .district-btn {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-buttons {
+    margin-top: 0.5rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ========== Place Gallery ========== */
+.place-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.place-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.place-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.place-info {
+  padding: 1rem;
+}
+
+.place-info h2 {
+  margin-bottom: 0.5rem;
+  color: #2e8b57;
+}
+
+.place-info p {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+/* ========== Special Background for Alappuzha Page ========== */
+.district-bg {
+  background: url('https://img.freepik.com/free-photo/white-fabric-texture_1154-645.jpg?semt=ais_hybrid&w=740') no-repeat center center/cover;
+  color: white;
+}

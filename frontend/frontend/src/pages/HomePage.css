@@ -1,0 +1,54 @@
+/* HomePage.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #006400; /* Dark green */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-buttons .btn {
+  color: white;
+  background-color: #228B22; /* Forest green */
+  padding: 8px 16px;
+  margin-left: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons .btn:hover {
+  background-color: #32CD32; /* Lime Green */
+}
+
+.welcome-section {
+  text-align: center;
+  margin-top: 80px;
+  color: #2E8B57;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.welcome-section p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #b30d0d;
+  font-weight: bold;
+}
